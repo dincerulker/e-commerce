@@ -11118,7 +11118,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.dincer {
+.test {
   color: red;
   border-radius: 3px;
   border: 1px solid #ddd;
@@ -11126,8 +11126,4 @@ textarea.form-control-lg {
 
 .about {
   background-color: green;
-}
-
-.eren {
-  color: green;
 }
