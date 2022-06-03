@@ -1,0 +1,29 @@
+{
+  "name": "dincer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dincerulker/osf-academy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dincerulker/osf-academy/issues"
+  },
+  "homepage": "https://github.com/dincerulker/osf-academy#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.52.1",
+    "sass-autoprefixer": "^1.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
