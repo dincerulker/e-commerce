@@ -24,6 +24,7 @@
     "sass-autoprefixer": "^1.0.1"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0"
   }
 }
