@@ -36,7 +36,7 @@ a {
     box-shadow: none;
 }
 
-.collapse-service{
+.collapse-service {
     position: fixed;
     z-index: 99;
     width: 1400px;
@@ -44,11 +44,13 @@ a {
     left: 50%;
     transform: translate(-50%, 0px);
 }
-.nav-link:hover>.collapse-service{
+
+.nav-link:hover>.collapse-service {
     display: block;
 }
 
-/* slick dots positioning for web start*/
+/* slick carousel */
+
 .slider {
     width: 700px;
     margin: 0 auto;
@@ -56,14 +58,14 @@ a {
 }
 
 .slick-dots {
-    position: absolute;
-    bottom: 50px;
+    position: absolude;
     display: block;
     width: 100%;
     padding: 10px;
     margin: 0;
     list-style: none;
     text-align: center;
+
 }
 
 .slick-dots li.slick-active button:before {
@@ -75,7 +77,36 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
-  }
+    height: 505px;
 
-/* slick dots positioning for web end*/
+}
+
+.btn-radius {
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    background-color: #1e1d22;
+    opacity: 0.5;
+    width: 147px;
+    height: 36px;
+}
+
+.follow-fb {
+    font-size: 17px;
+}
+
+.btn-radius-fb {
+    border-radius: 30px;
+    border: 2px solid #3a5b96;
+    width: 147px;
+    height: 36px;
+    font-size: 14px;
+    color: #3a5b96;
+}
+
+.follow-text {
+    color: #45413e;
+}
+
+.summersales {
+    width: 300px;
+}
