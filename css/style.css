@@ -11119,13 +11119,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*Google Font*/
 .test {
   color: red;
   border-radius: 3px;
   border: 1px solid #ddd;
 }
 
-body, a {
+body,
+a {
   font-family: "Lato", sans-serif;
 }
 
@@ -11140,7 +11142,59 @@ body, a {
   color: #84bc22;
 }
 
+.nav-item:hover > .dropdown-menu {
+  display: block;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.collapse-service {
+  position: fixed;
+  z-index: 99;
+  width: 1400px;
+  top: 86px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+.nav-link:hover > .collapse-service {
+  display: block;
+}
+
+/* slick dots positioning for web start*/
+.slider {
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 10px;
+  color: whitesmoke;
+}
+
+.slider-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+/* slick dots positioning for web end*/
 .about {
   background-color: green;
 }
-
