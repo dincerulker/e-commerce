@@ -65,12 +65,15 @@ a {
     margin: 0;
     list-style: none;
     text-align: center;
+    left: auto;
+    top: 90%;
 
 }
 
 .slick-dots li.slick-active button:before {
     font-size: 10px;
     color: whitesmoke;
+    
 }
 
 .slider-img {
