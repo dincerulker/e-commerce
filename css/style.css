@@ -11119,11 +11119,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*Google Font*/
+/*Google Font
+  *******************************************************/
 .test {
   color: red;
   border-radius: 3px;
   border: 1px solid #ddd;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 body,
@@ -11131,7 +11136,8 @@ a {
   font-family: "Lato", sans-serif;
 }
 
-/* Header Style */
+/* Header Style 
+  *******************************************************/
 .osf-text {
   color: #011847;
   letter-spacing: 10px;
@@ -11164,7 +11170,8 @@ a {
   display: block;
 }
 
-/* slick carousel */
+/* slick carousel 
+  *******************************************************/
 .slider {
   width: 700px;
   margin: 0 auto;
@@ -11223,6 +11230,137 @@ a {
 
 .summersales {
   width: 300px;
+}
+
+/* Populer Items 
+  *******************************************************/
+.card {
+  border: none;
+}
+
+.pop_items {
+  display: flex;
+  flex-direction: row;
+}
+
+.pop_items:before,
+.pop_items:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid;
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 30%;
+  font-size: 12px;
+}
+
+.pop_items:before {
+  margin-right: 10px;
+}
+
+.pop_items:after {
+  margin-left: 10px;
+}
+
+.card-hover {
+  cursor: pointer;
+}
+
+.item-hover .card-hover {
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-hover .item-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 196, 110, 0.75);
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  color: #fff;
+}
+
+.item-hover:hover .item-cover {
+  opacity: 1;
+}
+
+.hover-icons a {
+  color: inherit;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.hover-icons a:hover {
+  justify-content: center;
+  opacity: 1;
+}
+
+.static-card-container {
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.static-card-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: inherit;
+  background: linear-gradient(to top, #675b99, #dc5987);
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  padding: 5px 5px;
+}
+
+.static-card-overlay p {
+  padding-left: 15px;
+}
+
+.static-img {
+  display: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.static-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.input-btn {
+  border-radius: 28px;
+}
+
+.item-container {
+  height: 420px;
+}
+
+.item-buy-now {
+  border: 3px groove rgba(0, 0, 0, 0.1);
+  border-radius: 30px 0 0 30px;
+}
+
+.item-buy {
+  border: 3px groove rgba(0, 0, 0, 0.1);
+  border-radius: 0 30px 30px 0;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .about {
