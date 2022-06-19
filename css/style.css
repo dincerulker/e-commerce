@@ -11363,6 +11363,12 @@ a {
   cursor: pointer;
 }
 
+/* Footer 
+  *******************************************************/
+footer, a {
+  text-decoration: none;
+}
+
 .about {
   background-color: green;
 }
