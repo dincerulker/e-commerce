@@ -11366,7 +11366,33 @@ a {
 /* Full-Width-Image 
   *******************************************************/
 .full-witdh-image {
-  background: url("../img/image_fwi.png") no-repeat center center fixed;
+  background: url("../img/image_fwi.png") no-repeat;
+}
+
+/* Featured Products
+  *******************************************************/
+.featured-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.featured-line:before, .featured-line:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+.featured-line:before {
+  margin-right: 10px;
+}
+
+.featured-line:after {
+  margin-left: 10px;
+}
+
+.feature-products {
+  color: #84bc22;
 }
 
 /* Footer 

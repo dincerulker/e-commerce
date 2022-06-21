@@ -75,3 +75,18 @@ $(document).ready(function () {
     }
   });
 });
+
+/* Featured Product Slick
+*******************************************************/
+
+$(function() {
+  $('.featured-item').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev_arrow',
+      nextArrow: '.next_arrow'
+    });
+});
