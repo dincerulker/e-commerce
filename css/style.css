@@ -11395,6 +11395,17 @@ a {
   color: #84bc22;
 }
 
+/* Benefits Content 
+*******************************************************/
+.benefits-content {
+  background-color: #45413e;
+  height: 198px;
+}
+
+.benefit-margin {
+  margin-top: 35px;
+}
+
 /* Footer 
   *******************************************************/
 footer, a {
