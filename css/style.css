@@ -11413,6 +11413,14 @@ footer, a {
   text-decoration: none;
 }
 
+.btn-radius-category {
+  border-radius: 30px;
+  border: 2px solid #45413e;
+  opacity: 0.5;
+  width: 227px;
+  height: 36px;
+}
+
 /*Google Font
   *******************************************************/
 main {
