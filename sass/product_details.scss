@@ -55,6 +55,7 @@
 .img-main {
     width: 90%;
     height: auto;
+    cursor: pointer;
 }
 
 .input-css {
@@ -103,4 +104,32 @@ input::-webkit-inner-spin-button {
 .btn-detail {
     background-color: #84bc22;
     border-radius: 30px;
+    width: 153px;
+    height: 36px;
 }
+
+.share-word {
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    color: #45413e;
+}
+
+#img-1:hover {
+    cursor: pointer;
+}
+#img-2:hover {
+    cursor: pointer;
+}
+#img-3:hover {
+    cursor: pointer;
+}
+#img-4:hover {
+    cursor: pointer;
+}
+
+#imgDiv {
+    cursor: pointer;
+}
+
+  

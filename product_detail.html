@@ -203,35 +203,31 @@
                     <!--Images-->
                     <div class="col-12 col-lg-7 justify-content-center py-5">
                         <div class="row">
-                            <div class="col-9 col-lg-9">
-                                <img class="img-main mx-auto d-block p-0" id="myImg"
+                            <div class="col-9 col-lg-9 deneme">
+                                <img class="img-main mx-auto d-block p-0 zoomable" id="imgBig"
                                     src="./img/product_detail/black-front-big.jpg" alt="">
                             </div>
-                            <div id="myModal" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="main-image" id="img01">
-                                <div id="caption"></div>
-                            </div>
+                            <div class="col-9 col-lg-9" id="imgDiv" style="display: none;"></div>
                             <div class="col-3 col-lg-2">
                                 <div class="col-8">
-                                    <div class="row" id="test" tabindex="0">
-                                        <img class="p-0" id="img-1" tabindex="0"
+                                    <div class="row" tabindex="0">
+                                        <img class="p-0 w-75" id="img-1" tabindex="0"
                                             src="./img/product_detail/black-front-big.jpg" alt="black-front">
                                     </div>
                                     <br>
                                     <div class="row">
-                                        <img class="p-0" id="img-2"
-                                            src="./img/product_detail/black-back-big.jpg" alt="black-back">
+                                        <img class="p-0 w-75" id="img-2" src="./img/product_detail/black-back-big.jpg"
+                                            alt="black-back">
                                     </div>
                                     <br>
                                     <div class="row">
-                                        <img class="p-0" id="img-3"
-                                            src="./img/product_detail/blue-front-big.jpg" alt="blue-front">
+                                        <img class="p-0 w-75" id="img-3" src="./img/product_detail/blue-front-big.jpg"
+                                            alt="blue-front">
                                     </div>
                                     <br>
                                     <div class="row">
-                                        <img class="p-0" id="img-4"
-                                            src="./img/product_detail/blue-back-big.jpg" alt="blue-back">
+                                        <img class="p-0 w-75" id="img-4" src="./img/product_detail/blue-back-big.jpg"
+                                            alt="blue-back">
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +241,7 @@
                         <div class="row">
                             <div class="col-5">
                                 <select class="form-select input-css dot-image" aria-label="Default select example">
-                                    <option selected >Black</option>
+                                    <option selected>Dark Gray</option>
                                     <option value="1">Blue</option>
                                 </select>
                             </div>
@@ -256,7 +252,7 @@
                                     <a onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                         class="minus py-1 text-dark "><i class="fas fa-minus"></i></a>
                                     <input class="quantity col-4 py-1 text-center input-css" min="0" name="quantity"
-                                        value="1" type="number" >
+                                        value="1" type="number">
                                     <a onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                                         class="plus py-1 text-dark "><i class="fas fa-plus"></i></a>
                                 </div>
@@ -266,21 +262,26 @@
                             </div>
                         </div>
                         <div class="row">
-                            <p class="product-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Accusamus nisi ullam, praesentium minima natus ad debitis
-                                perferendis animi error reiciendis ab minus similique ipsum,
-                                enim eius quidem placeat commodi nam autem quaerat vel voluptatibus
-                                beatae!
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt
+                                explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas
                             <p class="more-info">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Praesentium expedita voluptatem amet numquam sed molestias.
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                                nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                                pariatur?
                             </p>
                             </p>
-                            <a class="read-more text-color text-decoration-none" type="button">Read More</a>
+                            <a class="read-more academy-text text-decoration-none mt-0" type="button">Read More</a>
                         </div>
                         <div class="row pt-3">
                             <div class="col-2 lead">
-                                <p>Share</p>
+                                <p class="share-word">Share</p>
                             </div>
                             <div class="col-1">
                                 <a href="https://www.facebook.com/OSFDigital"><i
@@ -348,18 +349,18 @@
                             <h3>Additional Information</h3>
                             <br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Fugiat repudiandae enim eos molestias voluptate dolorem maiores modi mollitia.
-                            Distinctio et itaque provident similique, tempore cumque hic ut eveniet quia blanditiis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, saepe dolorum!
-                            Saepe, ut laboriosam. Dolorum alias nam molestias voluptatem nostrum omnis
-                            quis ab atque! Aliquam quas natus quos cumque assumenda molestiae iusto corporis
-                            amet soluta, saepe a rerum! Perspiciatis blanditiis eius commodi iure, ipsa quam
-                            similique sapiente saepe ullam nesciunt, nam a, quaerat laudantium fugiat animi
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Fugiat repudiandae enim eos molestias voluptate dolorem maiores modi mollitia.
-                            Distinctio et itaque provident similique, tempore cumque hic ut eveniet quia blanditiis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, saepe dolorum!
-                            vitae obcaecati optio earum.</p> 
+                                Fugiat repudiandae enim eos molestias voluptate dolorem maiores modi mollitia.
+                                Distinctio et itaque provident similique, tempore cumque hic ut eveniet quia blanditiis!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, saepe dolorum!
+                                Saepe, ut laboriosam. Dolorum alias nam molestias voluptatem nostrum omnis
+                                quis ab atque! Aliquam quas natus quos cumque assumenda molestiae iusto corporis
+                                amet soluta, saepe a rerum! Perspiciatis blanditiis eius commodi iure, ipsa quam
+                                similique sapiente saepe ullam nesciunt, nam a, quaerat laudantium fugiat animi
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Fugiat repudiandae enim eos molestias voluptate dolorem maiores modi mollitia.
+                                Distinctio et itaque provident similique, tempore cumque hic ut eveniet quia blanditiis!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, saepe dolorum!
+                                vitae obcaecati optio earum.</p>
                         </div>
                         <div class="tab-pane fade text-light mx-4 my-5" id="nav-contact" role="tabpanel"
                             aria-labelledby="nav-contact-tab">
@@ -418,10 +419,10 @@
                     <div class="card h-100 card-container">
                         <img src="./img/popular-items/item-3.png" class="card-img-top bg-dark item-img" alt="...">
                         <div class="card-body text-center item-card-bottom">
-                            <a class="text-decoration-none" href="#">
+                            <a class="text-decoration-none" href="./product_detail.html">
                                 <p class="card-text text-dark item-name">Hay - About A Lounge<br> Chair AAL 93.</p>
                             </a>
-                            <a href="./product_details.html" class="btn my-3 item-buy-now">
+                            <a href="./product_detail.html" class="btn my-3 item-buy-now">
                                 <span class="academy-text ">$659.55</span>
                             </a>
                             <button class="btn text-dark item-buy">BUY NOW</button>

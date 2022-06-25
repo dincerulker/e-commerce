@@ -60,3 +60,72 @@ $(document).ready(function () {
     }
   });
 });
+
+/* Read More Button 
+*******************************************************/
+
+$('.more-info').hide();
+$('.read-more').click(function(){
+
+  $('.more-info').slideToggle('slow');
+  if($(this).text() == 'Read Less'){
+      $(this).text('Read More');
+  } else {
+      $(this).text('Read Less');
+  }
+});
+
+
+/* Product Image Small to Big
+*******************************************************/
+$('#img-1').on({'click': function(){
+      let imgProduct = $('#img-1').attr('src');
+      $('.img-main').attr('src', imgProduct);
+  }
+});
+
+$('#img-2').on({'click': function(){
+      let imgProduct = $('#img-2').attr('src');
+      $('.img-main').attr('src', imgProduct);
+  }
+});
+
+$('#img-3').on({'click': function(){
+      let imgProduct = $('#img-3').attr('src');
+      $('.img-main').attr('src', imgProduct);
+  }
+});
+
+$('#img-4').on({'click': function(){
+      let imgProduct = $('#img-4').attr('src');
+      $('.img-main').attr('src', imgProduct);
+  }
+});
+
+
+/* Product Image Get Bigger
+*******************************************************/
+
+$(function() {
+  $("img.img-main").click(function(e) {
+      var newImg = '<img src=' + $(this).attr("src") + '></img>';
+      $('#imgDiv')
+         .html($(newImg)
+         .animate({ height: '789', width: '867' }, 1));
+  });
+});  
+
+var img = document.getElementsByClassName('deneme')[0];
+var bigImage = document.getElementById('imgDiv');
+
+img.onclick = function() {
+  bigImage.style.display = 'block';
+  img.style.display = 'none';
+  bigImage.style.zIndex = '1';
+  
+
+}
+bigImage.onclick = function() {
+  bigImage.style.display = 'none';
+  img.style.display = 'block';
+}
