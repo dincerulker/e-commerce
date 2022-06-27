@@ -117,6 +117,7 @@ $('.item-buy').on({
   }
 });  
 
+
 /* Wish Badge Count
 *******************************************************/
 let wishCount = parseInt($('.wish-badge').text());
