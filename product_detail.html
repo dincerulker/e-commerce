@@ -87,7 +87,7 @@
                             </button>
                         </div>
                         <div class="col-md">
-                            <button type="button" class="btn btn-link-secondary text-secondary ">
+                            <button type="button" class="btn btn-link-secondary text-secondary " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">
                                 <i class="nav-icons fa fa-user fa-lg"></i>
                             </button>
                         </div>
@@ -108,6 +108,41 @@
             </div>
         </div>
     </nav>
+    <!--LOG IN DIALOG-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content d-flex">
+                <div class="modal-header align-item-center justify-content-center border-bottom-0 mt-3">
+                    <p class="modal-title fs-3 fw-bold" id="exampleModalLabel">Sign In</p>
+                </div>
+                <div class="modal-body">
+                    <form class="px-5">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label login-text mb-3">Email</label>
+                            <input type="email" class="form-control form-feature" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="inputPassword" class="form-label login-text mb-3">Lato</label>
+                            <div class="input-group" id="show_hide_password">
+                                <input type="password" class="form-control form-feature-two" id="inputPassword" 
+                                title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character"
+                                required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                                <div class="input-group-addon mx-1">
+                                    <a class="btn btn-outline-light password-show" href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center pb-2 mt-4">
+                            <button type="submit" class="btn login-btn form-submit" >LOGIN</button>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 mb-4">
+                            <a class="academy-text " href="./index.html" style="font-size: 12px;">I don't have an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--SERVICES DROPDOWN MENU -->
     <div class="container-fluid bg-dark dropdown-service collapse-service ">
@@ -119,43 +154,43 @@
                         <h6 class="collapse-header text-white fw-bold">PRODUCT CATEGORIES</h6>
                         <a class="collapse-item text-decoration-none text-light lh-lg"
                             href="./404.html">Accesories</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Alcohol</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Art</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Books</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Drink</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Alcohol</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Art</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Books</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Drink</a><br>
                         <a class="collapse-item text-decoration-none text-light lh-lg"
                             href="./404.html">Electronics</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Flowers &
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Flowers &
                             Plants</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Food</a>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Food</a>
                     </div>
                     <div class="col-sm-2 p-2">
                         <br>
                         <br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Gadgets</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Garden</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Grocery</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Home</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Jewelry</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Kids &
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Gadgets</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Garden</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Grocery</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Home</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Jewelry</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Kids &
                             Baby</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Men's
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Men's
                             Fashion</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Mobile</a>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Mobile</a>
                     </div>
                     <div class="col-sm-2 p-2">
                         <br>
                         <br>
                         <a class="collapse-item text-decoration-none text-light lh-lg"
                             href="./404.html">Motorcycles</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Movies</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Music</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Office</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Pets</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Movies</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Music</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Office</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Pets</a><br>
                         <a class="collapse-item text-decoration-none text-light lh-lg"
                             href="./404.html">Romantic</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Sport</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Toys</a>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Sport</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Toys</a>
                     </div>
 
                     <div class="col-sm-2 p-2">
@@ -163,15 +198,15 @@
                         <h6 class="collapse-header text-white fw-bold">SALE</h6>
                         <a class="collapse-item text-decoration-none text-light lh-lg"
                             href="./404.html">Accesories</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Alcohol</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Art</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Books</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Drink</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Alcohol</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Art</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Books</a><br>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Drink</a><br>
                         <a class="collapse-item text-decoration-none text-light lh-lg"
                             href="./404.html">Electronics</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Flowers &
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Flowers &
                             Plants</a><br>
-                        <a class="collapse-item text-decoration-none text-light lh-lg" href="#">Food</a>
+                        <a class="collapse-item text-decoration-none text-light lh-lg" href="./404.html">Food</a>
                     </div>
 
                     <div class="col-sm-4 p-5">
@@ -554,51 +589,51 @@
                 </div>
                 <div class="col-sm-2 ">
                     <h6 class="text-secondary fw-bold">CATEGORIES</h6>
-                    <a class="text-secondary footer-text" href="#">Alcohol</a>
+                    <a class="text-secondary footer-text" href="./404.html">Alcohol</a>
                     <br>
-                    <a class="text-secondary" href="#">Art</a>
+                    <a class="text-secondary" href="./404.html">Art</a>
                     <br>
-                    <a class="text-secondary" href="#">Books</a>
+                    <a class="text-secondary" href="./404.html">Books</a>
                     <br>
-                    <a class="text-secondary" href="#">Drink</a>
+                    <a class="text-secondary" href="./404.html">Drink</a>
                 </div>
                 <div class="col-sm-2">
                     <br>
-                    <a class="text-secondary" href="#">Home</a>
+                    <a class="text-secondary" href="./404.html">Home</a>
                     <br>
-                    <a class="text-secondary" href="#">Jewelry</a>
+                    <a class="text-secondary" href="./404.html">Jewelry</a>
                     <br>
-                    <a class="text-secondary" href="#">Kids & Baby</a>
+                    <a class="text-secondary" href="./404.html">Kids & Baby</a>
                     <br>
-                    <a class="text-secondary" href="#">Men's Fashion</a>
+                    <a class="text-secondary" href="./404.html">Men's Fashion</a>
                     <br>
-                    <a class="text-secondary" href="#">Mobile</a>
+                    <a class="text-secondary" href="./404.html">Mobile</a>
                     <br>
-                    <a class="text-secondary" href="#">Motorcycles</a>
+                    <a class="text-secondary" href="./404.html">Motorcycles</a>
                     <br>
-                    <a class="text-secondary" href="#">Movies</a>
+                    <a class="text-secondary" href="./404.html">Movies</a>
                     <br>
-                    <a class="text-secondary" href="#">Music</a>
+                    <a class="text-secondary" href="./404.html">Music</a>
                 </div>
                 <div class="col-sm-2">
                     <br>
-                    <a class="text-secondary" href="#">Sport</a>
+                    <a class="text-secondary" href="./404.html">Sport</a>
                     <br>
-                    <a class="text-secondary" href="#">Toys</a>
+                    <a class="text-secondary" href="./404.html">Toys</a>
                     <br>
-                    <a class="text-secondary" href="#">Travel</a>
+                    <a class="text-secondary" href="./404.html">Travel</a>
                     <br>
-                    <a class="text-secondary" href="#">Women's Fashion</a>
+                    <a class="text-secondary" href="./404.html">Women's Fashion</a>
                 </div>
                 <div class="col-sm-2">
                     <h6 class="text-secondary fw-bold">ABOUT</h6>
-                    <a class="text-secondary" href="#">About Us</a>
+                    <a class="text-secondary" href="./404.html">About Us</a>
                     <br>
-                    <a class="text-secondary" href="#">Delivery</a>
+                    <a class="text-secondary" href="./404.html">Delivery</a>
                     <br>
-                    <a class="text-secondary" href="#">Testimonials</a>
+                    <a class="text-secondary" href="./404.html">Testimonials</a>
                     <br>
-                    <a class="text-secondary" href="#">Contact</a>
+                    <a class="text-secondary" href="./404.html">Contact</a>
                 </div>
                 <div class="col-sm-2">
                     <div class="row">

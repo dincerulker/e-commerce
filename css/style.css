@@ -11378,7 +11378,8 @@ a {
   flex-direction: row;
 }
 
-.featured-line:before, .featured-line:after {
+.featured-line:before,
+.featured-line:after {
   content: "";
   flex: 1 1;
   border-bottom: 1px solid;
@@ -11410,7 +11411,8 @@ a {
 
 /* Footer 
   *******************************************************/
-footer, a {
+footer,
+a {
   text-decoration: none;
 }
 
@@ -11441,6 +11443,51 @@ footer, a {
   background: #fff;
   color: #84bc22;
   font-size: 10px;
+}
+
+/* Login Dialog Modal
+*******************************************************/
+.login-btn {
+  border-radius: 30px;
+  width: 181px;
+  height: 36px;
+  background-color: #84bc22;
+  font-family: Lato;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.form-feature {
+  border-radius: 30px;
+  border-color: #d7d7d7;
+  width: 365px;
+  height: 36px;
+}
+
+.form-feature-two {
+  border-radius: 30px;
+  height: 36px;
+}
+
+.password-show {
+  border-radius: 0 30px 30px 0;
+  border-color: #d7d7d7;
+  height: 36px;
+}
+
+.password-show,
+.password-show:hover {
+  color: #333;
+  border-color: #d7d7d7;
+}
+
+.login-text {
+  width: 25px;
+  height: 10px;
+  color: #45413e;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*Google Font
@@ -11661,4 +11708,49 @@ input::-webkit-inner-spin-button {
 
 #imgDiv {
   cursor: pointer;
+}
+
+/* Login Dialog Modal
+*******************************************************/
+.login-btn {
+  border-radius: 30px;
+  width: 181px;
+  height: 36px;
+  background-color: #84bc22;
+  font-family: Lato;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.form-feature {
+  border-radius: 30px;
+  border-color: #d7d7d7;
+  width: 365px;
+  height: 36px;
+}
+
+.form-feature-two {
+  border-radius: 30px;
+  height: 36px;
+}
+
+.password-show {
+  border-radius: 0 30px 30px 0;
+  border-color: #d7d7d7;
+  height: 36px;
+}
+
+.password-show,
+.password-show:hover {
+  color: #333;
+  border-color: #d7d7d7;
+}
+
+.login-text {
+  width: 25px;
+  height: 10px;
+  color: #45413e;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
 }

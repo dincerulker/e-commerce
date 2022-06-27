@@ -86,7 +86,7 @@
                             </button>
                         </div>
                         <div class="col-md">
-                            <button type="button" class="btn btn-link-secondary text-secondary ">
+                            <button type="button" class="btn btn-link-secondary text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">
                                 <i class="nav-icons fa fa-user fa-lg"></i>
                             </button>
                         </div>
@@ -107,6 +107,42 @@
             </div>
         </div>
     </nav>
+
+    <!--LOG IN DIALOG-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content d-flex">
+                <div class="modal-header align-item-center justify-content-center border-bottom-0 mt-3">
+                    <p class="modal-title fs-3 fw-bold" id="exampleModalLabel">Sign In</p>
+                </div>
+                <div class="modal-body">
+                    <form class="px-5">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label login-text mb-3">Email</label>
+                            <input type="email" class="form-control form-feature" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="inputPassword" class="form-label login-text mb-3">Lato</label>
+                            <div class="input-group" id="show_hide_password">
+                                <input type="password" class="form-control form-feature-two" id="inputPassword" 
+                                title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character"
+                                required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                                <div class="input-group-addon mx-1">
+                                    <a class="btn btn-outline-light password-show" href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center pb-2 mt-4">
+                            <button type="submit" class="btn login-btn form-submit" >LOGIN</button>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 mb-4">
+                            <a class="academy-text " href="./index.html" style="font-size: 12px;">I don't have an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--SERVICES DROPDOWN MENU -->
     <div class="container-fluid bg-dark dropdown-service collapse-service ">
@@ -401,7 +437,7 @@
                 </div>
             </div>
             <div class="d-grid col-4 text-center mx-auto pb-5">
-                <button type="button" class="btn btn-outline-light mx-5 px-5 input-btn load-more me-5">Load More
+                <button type="button" class="btn btn-outline-light mx-5 px-5 input-btn load-more me-5" >Load More
                     &nbsp;&nbsp;
                     <i class="fa-solid fa-arrow-rotate-right"></i>
                 </button>
