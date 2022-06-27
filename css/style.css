@@ -11422,6 +11422,27 @@ footer, a {
   height: 36px;
 }
 
+/* Wish & cart bages 
+*******************************************************/
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.notification .badge {
+  z-index: 100;
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  border: 1px solid #84bc22;
+  border-radius: 100%;
+  background: #fff;
+  color: #84bc22;
+  font-size: 10px;
+}
+
 /*Google Font
   *******************************************************/
 main {

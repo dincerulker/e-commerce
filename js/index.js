@@ -90,3 +90,46 @@ $(function() {
       nextArrow: '.next_arrow'
     });
 });
+
+/* Cart Badge Count
+*******************************************************/
+let cartCount = parseInt($('.cart-badge').text());
+
+if(localStorage.getItem('cartCount')){
+  cartCount = parseInt(localStorage.getItem('cartCount')); // Get old count from cookie
+  $('.cart-badge').text(cartCount);
+}
+/* Plus Icon Button */
+$('.plus-icon').on({
+  'click': function(){
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount); // Saved card count from cookies
+  }
+});
+
+/* Populer Items Buy Now Button */
+$('.item-buy').on({
+  'click': function(){
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount);
+  }
+});  
+
+/* Wish Badge Count
+*******************************************************/
+let wishCount = parseInt($('.wish-badge').text());
+
+if(localStorage.getItem('wishCount')){
+  wishCount = parseInt(localStorage.getItem('wishCount')); // Get old count from cookie
+  $('.wish-badge').text(wishCount);
+}
+
+$('.heart-icon').on({
+  'click': function(){
+    wishCount += 1;
+    $('.wish-badge').text(wishCount);
+    localStorage.setItem('wishCount', wishCount);
+  }
+});
