@@ -112,7 +112,9 @@ $(function() {
       $('#imgDiv')
          .html($(newImg)
          .animate({ height: '789', width: '867' }, 1));
+         
   });
+  
 });  
 
 var img = document.getElementsByClassName('deneme')[0];
@@ -202,4 +204,19 @@ $(document).ready(function() {
 
       }
   });
+});
+
+
+/* SLIDER FOR PRODUCTS MOBILE
+*******************************************************/
+$('.populer-item-slider').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  fade: true,
+  autoplaySpeed: 2000,
+  prevArrow: false,
+  nextArrow: false
 });

@@ -76,7 +76,8 @@ $(document).ready(function () {
   });
 });
 
-//SLIDER FOR PRODUCTS MOBILE
+/* SLIDER FOR PRODUCTS MOBILE
+*******************************************************/
 $('.populer-item-slider').slick({
   dots: true,
   infinite: true,
