@@ -76,6 +76,21 @@ $(document).ready(function () {
   });
 });
 
+//SLIDER FOR PRODUCTS MOBILE
+$('.populer-item-slider').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  fade: true,
+  autoplaySpeed: 2000,
+  prevArrow: false,
+  nextArrow: false
+});
+
+
+
 /* Featured Product Slick
 *******************************************************/
 
@@ -89,6 +104,19 @@ $(function () {
     prevArrow: '.prev_arrow',
     nextArrow: '.next_arrow'
   });
+});
+
+/* Featured Product Slick for Mobile
+*******************************************************/
+$(function() {
+  $('.featured-item-mobile').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev_arrow-m',
+      nextArrow: '.next_arrow-m'
+    });
 });
 
 /* Cart Badge Count

@@ -72,10 +72,6 @@ a {
   transform: translate(-50%, 0px);
 }
 
-.nav-link:hover>.collapse-service {
-  display: block;
-}
-
 
 /* slick carousel 
   *******************************************************/
@@ -275,6 +271,15 @@ a {
   cursor: pointer;
 }
 
+.static-card-container-m {
+  height: 520px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
 
 /* Full-Width-Image 
   *******************************************************/
@@ -315,7 +320,6 @@ a {
 
 .benefits-content {
   background-color: #45413e;
-  height: 198px;
 }
 
 .benefit-margin {
@@ -434,3 +438,93 @@ a {
 .cookies-policy:hover {
   color: #84bc22;
 }
+
+
+@media screen and (min-width: 992px) {
+
+  .mobile-menu{
+    display: none;
+  }
+
+  .nav-mobile-menu {
+    display: none;
+  }
+
+  .mobile-items{
+    display: none;
+  }
+
+  #featured-item-mobile {
+    display: none;
+  }
+
+  .mobile-buttons{
+    display: none;
+  }
+
+  .mobile-arrow{
+    display: none;
+  }
+
+  .mobile-footer{
+    display: none;
+  }
+
+  .method-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-service {
+    display: none;
+  }
+
+  .nav-web-menu {
+    display: none;
+  }
+
+  .web-items {
+    display: none;
+  }
+
+  .web-buttons {
+    display: none;
+  }
+
+  #featured-item {
+    display: none;
+  }
+  
+  .comp-name {
+    display: none;
+  }
+
+  .web-arrow {
+    display: none;
+  }
+
+  .web-footer {
+    display: none;
+  }
+
+  .method-left {
+    display: none;
+  }
+
+  .brand-logo {
+    padding-left: 250%;
+  }
+
+  .slider-img {
+    height: 430px;
+  }
+
+  .summersales {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+}
+
+

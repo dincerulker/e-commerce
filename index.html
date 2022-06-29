@@ -23,18 +23,18 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top pb-0 z-depth-5 ">
         <div class="container">
             <a href="./index.html" class="navbar-brand ">
-                <div class="row">
+                <div class="row brand-logo">
                     <div class="col-8 col-md-3 col-sm-3 me-2">
                         <img src="./img/header/logo.png" alt="companylogo" style="height: 65px; width: 63px;">
                     </div>
-                    <div class="col-lg-4 col-md-9 col-sm-8 mt-1">
+                    <div class="col-lg-4 col-md-9 col-sm-8 mt-1 comp-name">
                         <h1 class="osf-text fs-2 fw-bold ms-2">OSF</h1>
                         <h2 class="academy-text fw-normal fs-4">Academy</h2>
                     </div>
                 </div>
             </a>
             <div>
-                <div class=" navbar-collapse collapse ">
+                <div class=" navbar-collapse collapse nav-web-menu ">
                     <ul class="navbar-nav me-auto mb-2 ">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#collapseService" role="button"
@@ -105,9 +105,120 @@
                         </div>
                     </div>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- MOBILE HEADER & NAVIGATION -->
+
+    <div class="container-fluid collapse nav-mobile-menu bg-dark rounded" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown dropdown-menu-end dropdown-menu-lg-start mobile-menu">
+                <a class="nav-link dropdown-toggle text-white btn-outline nav-hover" href="#collapseExample5"
+                    role="button" data-bs-toggle="collapse" aria-expanded="false">
+                    SERVICES
+                </a>
+                <ul class="container-fluid collapse bg-dark" id="collapseExample5">
+                    <div class="row">
+                        <p>
+                            <a class="dropdown-toggle text-white text-decoration-none" data-bs-toggle="collapse"
+                                href="#multiCollapseExample4" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample4"> <b>PRODUCT
+                                    CATEGORIES</b> </a>
+                        </p>
+                        <div class="row collapse multi-collapse" id="multiCollapseExample4">
+                            <a class="dropdown-item text-white" href="./404.html">Accesories</a>
+                            <a class="dropdown-item text-white" href="./404.html">Alcohol</a>
+                            <a class="dropdown-item text-white" href="./404.html">Art</a>
+                            <a class="dropdown-item text-white" href="./404.html">Books</a>
+                            <a class="dropdown-item text-white" href="./404.html">Drink</a>
+                            <a class="dropdown-item text-white" href="./404.html">Electronics</a>
+                            <a class="dropdown-item text-white" href="./404.html">Flowers & Plants</a>
+                            <a class="dropdown-item text-white" href="./404.html">Food</a>
+                            <a class="dropdown-item text-white" href="./404.html">Gadgets</a>
+                            <a class="dropdown-item text-white" href="./404.html">Garden</a>
+                            <a class="dropdown-item text-white" href="./404.html">Grocery</a>
+                            <a class="dropdown-item text-white" href="./404.html">Home</a>
+                            <a class="dropdown-item text-white" href="./404.html">Jewelry</a>
+                            <a class="dropdown-item text-white" href="./404.html">Kids & Baby</a>
+                            <a class="dropdown-item text-white" href="./404.html">Men's Fashion</a>
+                            <a class="dropdown-item text-white" href="./404.html">Mobile</a>
+                            <a class="dropdown-item text-white" href="./404.html">Motorcycles</a>
+                            <a class="dropdown-item text-white" href="./404.html">Movies</a>
+                            <a class="dropdown-item text-white" href="./404.html">Music</a>
+                            <a class="dropdown-item text-white" href="./404.html">Office</a>
+                            <a class="dropdown-item text-white" href="./404.html">Pets</a>
+                            <a class="dropdown-item text-white" href="./404.html">Romantic</a>
+                            <a class="dropdown-item text-white" href="./404.html">Sport</a>
+                            <a class="dropdown-item text-white" href="./404.html">Toys</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <a class="dropdown-toggle text-white text-decoration-none" data-bs-toggle="collapse"
+                                href="#multiCollapseExample5" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample5"> <b>SALE</b>
+                            </a>
+                        </p>
+                        <div class="row collapse multi-collapse" id="multiCollapseExample5">
+                            <a class="dropdown-item text-white" href="./404.html">Accesories</a>
+                            <a class="dropdown-item text-white" href="./404.html">Alcohol</a>
+                            <a class="dropdown-item text-white" href="./404.html">Art</a>
+                            <a class="dropdown-item text-white" href="./404.html">Books</a>
+                            <a class="dropdown-item text-white" href="./404.html">Drink</a>
+                            <a class="dropdown-item text-white" href="./404.html">Electronics</a>
+                            <a class="dropdown-item text-white" href="./404.html">Flowers & Plants</a>
+                            <a class="dropdown-item text-white" href="./404.html">Food</a>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">COMPANY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">LIBRARY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">CONTACT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white nav-hover" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white" href="#">SP</a></li>
+                    <li><a class="dropdown-item text-white" href="#">TR</a></li>
+                    <li><a class="dropdown-item text-white" href="#">BR</a></li>
+                    <li><a class="dropdown-item text-white" href="#">RU</a></li>
+                    <li><a class="dropdown-item text-white" href="#">UK</a></li>
+                    <li><a class="dropdown-item text-white" href="#">RO</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white nav-hover" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    $ US
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white" href="#">€ EU</a></li>
+                    <li><a class="dropdown-item text-white" href="#">₺ TL</a></li>
+                    <li><a class="dropdown-item text-white" href="#">£ GPB</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="container px-4 pb-4 pt-2">
+                    <img src="./img/serviceDropdown/service.png" class="d-block w-100" height="340" alt="...">
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!--COOKIES POLICY-->
     <div class="modal fade show cookie-section" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
@@ -123,7 +234,7 @@
                         OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for
                         website performance and interaction with social media offering publicity tailored to your
                         interests. If you continue browsing, we consider that you accept its use.<br>
-                        You can expand this information consulting our 
+                        You can expand this information consulting our
                         <a class="academy-text cookies-policy" href="./404.html">Cookies Policy Page</a>.
                     </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -174,7 +285,7 @@
         </div>
     </div>
 
-    <!--SERVICES DROPDOWN MENU -->
+    <!--SERVICES DROPDOWN MENU FOR WEB-->
     <div class="container-fluid bg-dark dropdown-service collapse-service">
         <div class="collapse navbar-collapse" id="collapseService">
             <div class="container">
@@ -248,7 +359,7 @@
     </div>
 
     <!--Carousel Section -->
-    <div class="container" style="margin-top: -60px;">
+    <div class="container" style="margin-top: -40px;">
         <div class="row">
             <div class="slider-slick col-12 col-lg-9">
                 <div>
@@ -473,8 +584,139 @@
         </div>
     </div>
 
-    <!--FULL WIDTH IMAGE SECTION-->
+    <!--POPULAR ITEMS SECTION FOR MOBILE-->
+    <div class="container-fluid bg-dark mobile-items">
+        <div class="container popular-items-container-m">
+            <h3 class="pop_items-m text-white py-3 text-center">Popular Items</h3>
 
+            <div class="row my-5 populer-item-slider">
+                <div class="col-md-3 item-hover item-container">
+                    <div class="card card-hover h-100 card-container">
+                        <img src="./img/popular-items/item-2.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <p class="card-text item-name">Kristina Dam Oak Table With White<br>Marble Top</p>
+                            <p class="card-text item-price">$ 799.55</p>
+                        </div>
+                        <!--Card hover-->
+                        <div class="item-cover py-5">
+                            <div class="my-5 py-5 hover-icons">
+                                <a class="mx-3 plus-icon"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item-container">
+                    <div class="card h-100 card-container">
+                        <img src="./img/popular-items/item-3.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <a class="text-decoration-none" href="./product_detail.html">
+                                <p class="card-text text-dark item-name">Hay - About A Lounge<br> Chair AAL 93.</p>
+                            </a>
+                            <a href="./product_detail.html" class="btn my-3 item-buy-now">
+                                <span class="academy-text ">$659.55</span>
+                            </a>
+                            <button class="btn text-dark item-buy">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item-hover item-container">
+                    <div class="card card-hover h-100 card-container">
+                        <img src="./img/popular-items/item-7.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <p class="card-text item-name">Activate Facial Mask and<br> Charcoal Soap.</p>
+                            <p class="card-text item-price">$ 129.55</p>
+                        </div>
+                        <!--Card hover-->
+                        <div class="item-cover py-5">
+                            <div class="my-5 py-5 hover-icons">
+                                <a class="mx-3 plus-icon"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item-hover item-container">
+                    <div class="card card-hover h-100 card-container">
+                        <img src="./img/popular-items/item-4.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <p class="card-text item-name">Cocktail Table Walnut <br>| YES.</p>
+                            <p class="card-text item-price">$ 299.99</p>
+                        </div>
+                        <!--Card hover-->
+                        <div class="item-cover py-5">
+                            <div class="my-5 py-5 hover-icons">
+                                <a class="mx-3 plus-icon"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item-hover item-container">
+                    <div class="card card-hover h-100 card-container">
+                        <img src="./img/popular-items/item-1.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <p class="card-text item-name">Hay - About A Lounge<br> Chair AAL 93.</p>
+                            <p class="card-text item-price">$ 659.55</p>
+                        </div>
+                        <!--Card hover-->
+                        <div class="item-cover py-5">
+                            <div class="my-5 py-5 hover-icons">
+                                <a class="mx-3 plus-icon"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item-hover item-container">
+                    <div class="card card-hover h-100 card-container">
+                        <img src="./img/popular-items/item-5.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <p class="card-text item-name">TORY DESK CALENDAR.</p>
+                            <p class="card-text item-price">$ 410.99</p>
+                        </div>
+                        <!--Card hover-->
+                        <div class="item-cover py-5">
+                            <div class="my-5 py-5 hover-icons">
+                                <a class="mx-3 plus-icon"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 item-hover item-container">
+                    <div class="card card-hover h-100 card-container">
+                        <img src="./img/popular-items/item-6.png" class="card-img-top bg-dark item-img" alt="...">
+                        <div class="card-body text-center item-card-bottom">
+                            <p class="card-text item-name">CH445 Wing Chair on<br> Suıte NY.</p>
+                            <p class="card-text item-price">$ 330.55</p>
+                        </div>
+                        <!--Card hover-->
+                        <div class="item-cover py-5">
+                            <div class="my-5 py-5 hover-icons">
+                                <a class="mx-3 plus-icon"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-white static-card-container-m">
+                        <div class="static-img" style="background-image: url(./img/popular-items/item-pink.png)">
+                        </div>
+                        <div class="static-card-overlay">
+                            <p>My dragons are <br>
+                                misbehaving again.<br>
+                                Unbelieveable!</p>
+                            <p><img class="static-icon" src="./img/popular-items/pink-icon.png" alt=""> 3H AGO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FULL WIDTH IMAGE SECTION-->
     <div class="container bg-dark">
         <div class="full-witdh-image bg-cover py-5 ms-1">
             <div class="container py-5 justify-content-center align-items-center">
@@ -491,6 +733,8 @@
         <div class="container">
             <h1 class="text-white py-2 text-center">Featured Products</h1>
             <p class="text-center text-light">Unde omnis iste natus error sit voluptatem.</p>
+
+            <!--FEATURED PRODUCTS ARROW FOR WEB-->
             <div class="row justify-content-center web-arrow">
                 <div class="prev_arrow col-1 text-center" style="cursor: pointer;">
                     <span class="col-1 text-center"><i class="fas fa-chevron-left text-white mt-2 ms-5"></i></span>
@@ -500,7 +744,112 @@
                     <span class="col-1 text-center"><i class="fas fa-chevron-right text-white mt-2 me-5"></i></span>
                 </div>
             </div>
-            <div class="row my-5 px-5 featured-item">
+
+            <!--FEATURED PRODUCTS ARROW FOR MOBILE-->
+            <div class="row justify-content-center mobile-arrow">
+                <div class="prev_arrow-m col-1 text-center" style="cursor: pointer;">
+                    <span class="col-1 text-center"><i class="fas fa-chevron-left text-white mt-2"></i></span>
+                </div>
+                <h3 class="featured-line col-6 text-white text-center">///</h3>
+                <div class="next_arrow-m col-1 text-center" style="cursor: pointer;">
+                    <span class="col-1 text-center"><i class="fas fa-chevron-right text-white mt-2 me-5"></i></span>
+                </div>
+            </div>
+
+            <!--FEATURED PRODUCTS FOR WEB-->
+            <div class="row my-5 px-5 featured-item" id="featured-item">
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--FEATURED PRODUCTS FOR MOBILE-->
+            <div class="row my-5 px-5 featured-item-mobile" id="featured-item-mobile">
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
@@ -593,6 +942,8 @@
         </div>
     </div>
 
+
+
     <!--Benefits Content-->
     <div class="container benefits-content">
         <div class="container">
@@ -607,7 +958,7 @@
                             <p class="text-secondary">Our unwavering focus on superior service delivery and building
                                 next generation competencies</p>
                         </div>
-                        <div class="col-lg-1 col-3">
+                        <div class="col-lg-1 col-3 method-left">
                             <img src="./img/benefit-content/method.png" alt="">
                         </div>
                         <div class="col-lg-3 col-9 benefit-margin">
@@ -615,7 +966,10 @@
                             <p class="text-secondary">A standardized methodology designed to deliver measurable business
                                 results and predictable costs</p>
                         </div>
-                        <div class="col-lg-1 col-3">
+                        <div class="col-lg-1 col-3 method-right">
+                            <img src="./img/benefit-content/knowledge.png" alt="">
+                        </div>
+                        <div class="col-lg-1 col-3 ">
                             <img src="./img/benefit-content/knowledge.png" alt="">
                         </div>
                         <div class="col-lg-3 col-9 benefit-margin">
@@ -634,7 +988,7 @@
 
     <!--FOOTER -->
 
-    <footer class="footer mt-auto py-3 bg-white">
+    <footer class="footer mt-auto py-3 bg-white web-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
@@ -719,6 +1073,132 @@
             </div>
         </div>
     </footer>
+
+    <!--MOBILE FOOTER-->
+    <footer class="footer mt-auto py-3 my-5 mx-4 bg-white mobile-footer">
+        <div class="row mb-3">
+            <h6 class="text-secondary">© Copyright <span id="current-year-m"></span>.
+                <br>
+                All Rights Reserved.
+            </h6>
+
+        </div>
+        <div class="row">
+            <p>
+                <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="collapse"
+                    href="#multiCollapseExample1" role="button" aria-expanded="false"
+                    aria-controls="multiCollapseExample1"> <b>CONTACT</b> </a>
+            </p>
+            <div class="row collapse multi-collapse" id="multiCollapseExample1">
+                <p class="text-secondary">Headquarters: <br>
+                    5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6</p> <br>
+                <a href="mailto:contact@osf-global.com"
+                    class="text-secondary text-decoration-none">contact@osf-global.com</a> <br>
+                <a href="tel:+18885484344" class="text-secondary text-decoration-none mb-2">+1 (888) 548-4344</a>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="collapse"
+                    href="#multiCollapseExample2" role="button" aria-expanded="false"
+                    aria-controls="multiCollapseExample2"> <b>CATEGORIES</b> </a>
+            </p>
+            <div class="row collapse multi-collapse" id="multiCollapseExample2">
+                <a class="text-secondary text-decoration-none" href="./404.html">Alcohol</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Art</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Books</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Drink</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Home</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Jewelry</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Kids & Baby</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Men's Fashion</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Mobile</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Motorcycles</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Movies</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Music</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Sport</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Toys</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Travel</a>
+                <br>
+                <a class="text-secondary text-decoration-none mb-2" href="./404.html">Women's Fashion</a>
+            </div>
+            <div class="row">
+                <p>
+                    <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="collapse"
+                        href="#multiCollapseExample3" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample3"> <b>ABOUT</b> </a>
+                </p>
+                <div class="row collapse multi-collapse" id="multiCollapseExample3">
+                    <a class="text-secondary text-decoration-none" href="./404.html">About Us</a>
+                    <br>
+                    <a class="text-secondary text-decoration-none" href="./404.html">Delivery</a>
+                    <br>
+                    <a class="text-secondary text-decoration-none" href="./404.html">Testimonials</a>
+                    <br>
+                    <a class="text-secondary text-decoration-none" href="./404.html">Contact</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <a href="https://www.facebook.com/OSFDigital"><i class="fab fa-facebook-f text-dark"></i></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.google.com/"><i class="fab fa-google-plus-g text-dark"></i></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://twitter.com/osfdigital"><i class="fab fa-twitter text-dark"></i></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.pinterest.ca/osfglobal"><i class="fab fa-pinterest-p text-dark"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--MENU ICONS FOR MOBILE-->
+    <div class="container-fluid bg-dark mobile-buttons fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-link-secondary">
+                        <i class="fa-solid text-white fa-magnifying-glass fa-lg"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-link-secondary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@fat">
+                        <i class="nav-icons text-white fa fa-user fa-lg"></i>
+                    </button>
+                </div>
+                <div class="col notification-mobile">
+                    <button class="btn btn-link-secondary">
+                        <i class="nav-icons text-white fa-regular fa-heart fa-lg"></i>
+                        <span class="badge wish-badge">0</span>
+                    </button>
+                </div>
+                <div class="col notification-mobile">
+                    <button class="btn btn-link-secondary" onclick="location.href='./shopping_cart.html'" type="button">
+                        <i class="nav-icons text-white fa-solid fa-cart-shopping fa-lg"></i>
+                        <span class="badge cart-badge">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
