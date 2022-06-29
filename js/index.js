@@ -79,29 +79,29 @@ $(document).ready(function () {
 /* Featured Product Slick
 *******************************************************/
 
-$(function() {
+$(function () {
   $('.featured-item').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      prevArrow: '.prev_arrow',
-      nextArrow: '.next_arrow'
-    });
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: '.prev_arrow',
+    nextArrow: '.next_arrow'
+  });
 });
 
 /* Cart Badge Count
 *******************************************************/
 let cartCount = parseInt($('.cart-badge').text());
 
-if(localStorage.getItem('cartCount')){
+if (localStorage.getItem('cartCount')) {
   cartCount = parseInt(localStorage.getItem('cartCount')); // Get old count from cookie
   $('.cart-badge').text(cartCount);
 }
 /* Plus Icon Button */
 $('.plus-icon').on({
-  'click': function(){
+  'click': function () {
     cartCount += 1;
     $('.cart-badge').text(cartCount);
     localStorage.setItem('cartCount', cartCount); // Saved card count from cookies
@@ -110,25 +110,25 @@ $('.plus-icon').on({
 
 /* Populer Items Buy Now Button */
 $('.item-buy').on({
-  'click': function(){
+  'click': function () {
     cartCount += 1;
     $('.cart-badge').text(cartCount);
     localStorage.setItem('cartCount', cartCount);
   }
-});  
+});
 
 
 /* Wish Badge Count
 *******************************************************/
 let wishCount = parseInt($('.wish-badge').text());
 
-if(localStorage.getItem('wishCount')){
+if (localStorage.getItem('wishCount')) {
   wishCount = parseInt(localStorage.getItem('wishCount')); // Get old count from cookie
   $('.wish-badge').text(wishCount);
 }
 
 $('.heart-icon').on({
-  'click': function(){
+  'click': function () {
     wishCount += 1;
     $('.wish-badge').text(wishCount);
     localStorage.setItem('wishCount', wishCount);
@@ -137,24 +137,49 @@ $('.heart-icon').on({
 
 /* Show - Hide Password
 *******************************************************/
-$(document).ready(function() {
+$(document).ready(function () {
 
-  $("#show_hide_password a").on('click', function(event) {
+  $("#show_hide_password a").on('click', function (event) {
 
-      event.preventDefault();
+    event.preventDefault();
 
-      if ($('#show_hide_password input').attr("type") == "text") {
+    if ($('#show_hide_password input').attr("type") == "text") {
 
-          $('#show_hide_password input').attr('type', 'password');
-          $('#show_hide_password i').addClass( "fa-eye-slash" );
-          $('#show_hide_password i').removeClass( "fa-eye" );
+      $('#show_hide_password input').attr('type', 'password');
+      $('#show_hide_password i').addClass("fa-eye-slash");
+      $('#show_hide_password i').removeClass("fa-eye");
 
-      } else if ($('#show_hide_password input').attr("type") == "password") {
+    } else if ($('#show_hide_password input').attr("type") == "password") {
 
-          $('#show_hide_password input').attr('type', 'text');
-          $('#show_hide_password i').removeClass( "fa-eye-slash" );
-          $('#show_hide_password i').addClass( "fa-eye" );
+      $('#show_hide_password input').attr('type', 'text');
+      $('#show_hide_password i').removeClass("fa-eye-slash");
+      $('#show_hide_password i').addClass("fa-eye");
 
-      }
+    }
   });
 });
+
+/* Cookies Policy
+*******************************************************/
+const cookieContainer = document.querySelector(".cookie-section");
+const acceptCookies = document.querySelector(".accept-cookies");
+
+$(document).ready(function () {
+  $(window).on('load', function () {
+    setTimeout(function () { $('.cookie-section').modal('show'); },
+      5000);
+  });
+});
+
+acceptCookies.addEventListener("click", () => {
+  localStorage.setItem("cookieDisplay", "true");
+  Cookies.set("cookiesSet", "true");
+  $('.cookie-section').modal('hide');
+});
+
+if (!localStorage.getItem("cookieDisplay")) {
+  setTimeout(() => {
+    cookieContainer.classList.add("active");
+  }, 5000);
+}
+

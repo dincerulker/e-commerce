@@ -33,8 +33,29 @@ a {
   color: $academy-text-color;
 }
 
+.nav-item {
+  padding: 10px 10px 18px 10px;
+}
+
 .nav-item:hover>.dropdown-menu {
   display: block;
+}
+
+.nav-item:hover {
+  background-color: #333;
+  border-bottom: 4px solid #84bc22;
+}
+
+.nav-item:hover a.lang {
+  color: #000 !important;
+}
+
+.nav-item:hover a.currency {
+  color: #000 !important;
+}
+
+.nav-item:hover a {
+  color: #fff !important;
 }
 
 .btn:focus {
@@ -385,4 +406,31 @@ a {
   font-family: "Myriad Pro";
   font-size: 14px;
   font-weight: 400;
+}
+
+/* cookie css section */
+.container .cookie-section {
+  padding: 10px;
+  margin: 10px;
+  border: black;
+  transition: 400ms;
+}
+
+.accept-cookies {
+  
+  width: 148px;
+  height: 37px;
+  border-radius: 30px;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #84bc22;
+  font-size: 14px;
+}
+
+.accept-cookies:hover {
+  color: white
+}
+
+.cookies-policy:hover {
+  color: #84bc22;
 }
