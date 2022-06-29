@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 /* SLIDER FOR PRODUCTS MOBILE
 *******************************************************/
-$('.populer-item-slider').slick({
+$('.mobile-item-slider-m').slick({
   dots: true,
   infinite: true,
   slidesToShow: 1,
@@ -146,6 +146,23 @@ $('.item-buy').on({
   }
 });
 
+$('.item-buy-m').on({
+  'click': function () {
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount);
+  }
+});
+
+$('.plus-icon-m').on({
+  'click': function(){
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount);
+  }
+});
+
+
 
 /* Wish Badge Count
 *******************************************************/
@@ -158,6 +175,14 @@ if (localStorage.getItem('wishCount')) {
 
 $('.heart-icon').on({
   'click': function () {
+    wishCount += 1;
+    $('.wish-badge').text(wishCount);
+    localStorage.setItem('wishCount', wishCount);
+  }
+});
+
+$('.heart-icon-m').on({
+  'click': function(){
     wishCount += 1;
     $('.wish-badge').text(wishCount);
     localStorage.setItem('wishCount', wishCount);

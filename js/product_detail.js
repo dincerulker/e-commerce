@@ -156,6 +156,21 @@ $('.add-to-cart').on({
     localStorage.setItem('cartCount', cartCount); // Saved card count from cookies
   }
 });
+$('.item-buy-m').on({
+  'click': function () {
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount);
+  }
+});
+
+$('.item-buy').on({
+  'click': function () {
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount);
+  }
+});
 
 /* After adding the product, the quantity value set to 1. */
 $('.add-to-cart').on({
@@ -164,6 +179,14 @@ $('.add-to-cart').on({
   }
 }
 );
+
+$('.plus-icon-m').on({
+  'click': function(){
+    cartCount += 1;
+    $('.cart-badge').text(cartCount);
+    localStorage.setItem('cartCount', cartCount);
+  }
+});
 
 /* Wish Badge Count
 *******************************************************/
@@ -175,6 +198,14 @@ if(localStorage.getItem('wishCount')){
 }
 
 $('.heart-icon').on({
+  'click': function(){
+    wishCount += 1;
+    $('.wish-badge').text(wishCount);
+    localStorage.setItem('wishCount', wishCount);
+  }
+});
+
+$('.heart-icon-m').on({
   'click': function(){
     wishCount += 1;
     $('.wish-badge').text(wishCount);
@@ -209,7 +240,7 @@ $(document).ready(function() {
 
 /* SLIDER FOR PRODUCTS MOBILE
 *******************************************************/
-$('.populer-item-slider').slick({
+$('.mobile-item-slider-m').slick({
   dots: true,
   infinite: true,
   slidesToShow: 1,

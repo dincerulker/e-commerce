@@ -18,27 +18,25 @@
 </head>
 
 <body style="background-color: #f2edea;">
-    <!-- HEADER - NAVIGATION BAR -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top pb-0 z-depth-5 ">
         <div class="container">
             <a href="./index.html" class="navbar-brand ">
-                <div class="row">
+                <div class="row brand-logo">
                     <div class="col-8 col-md-3 col-sm-3 me-2">
                         <img src="./img/header/logo.png" alt="companylogo" style="height: 65px; width: 63px;">
                     </div>
-                    <div class="col-lg-4 col-md-9 col-sm-8 mt-1">
+                    <div class="col-lg-4 col-md-9 col-sm-8 mt-1 comp-name">
                         <h1 class="osf-text fs-2 fw-bold ms-2">OSF</h1>
                         <h2 class="academy-text fw-normal fs-4">Academy</h2>
                     </div>
                 </div>
             </a>
             <div>
-                <div class=" navbar-collapse collapse ">
+                <div class=" navbar-collapse collapse nav-web-menu ">
                     <ul class="navbar-nav me-auto mb-2 ">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#collapseService" role="button"
-                                data-bs-toggle="collapse">SERVICES</a>
+                                data-bs-toggle="collapse" id="serviceDropdown">SERVICES</a>
                             <ul class="collapse" id="collapseExample">
                                 <!--SERVICES DROPDOWN MENU -->
                             </ul>
@@ -79,14 +77,15 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="row web-buttons mb-3">
+                    <div class="row web-buttons mb-2">
                         <div class="col-md">
                             <button class="btn btn-link-secondary text-secondary ">
                                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                             </button>
                         </div>
                         <div class="col-md">
-                            <button type="button" class="btn btn-link-secondary text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">
+                            <button type="button" class="btn btn-link-secondary text-secondary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-bs-whatever="@fat">
                                 <i class="nav-icons fa fa-user fa-lg"></i>
                             </button>
                         </div>
@@ -104,9 +103,120 @@
                         </div>
                     </div>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- MOBILE HEADER & NAVIGATION -->
+
+    <div class="container-fluid collapse nav-mobile-menu bg-dark rounded" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown dropdown-menu-end dropdown-menu-lg-start mobile-menu">
+                <a class="nav-link dropdown-toggle text-white btn-outline nav-hover" href="#collapseExample5"
+                    role="button" data-bs-toggle="collapse" aria-expanded="false">
+                    SERVICES
+                </a>
+                <ul class="container-fluid collapse bg-dark" id="collapseExample5">
+                    <div class="row">
+                        <p>
+                            <a class="dropdown-toggle text-white text-decoration-none" data-bs-toggle="collapse"
+                                href="#multiCollapseExample4" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample4"> <b>PRODUCT
+                                    CATEGORIES</b> </a>
+                        </p>
+                        <div class="row collapse multi-collapse" id="multiCollapseExample4">
+                            <a class="dropdown-item text-white" href="./404.html">Accesories</a>
+                            <a class="dropdown-item text-white" href="./404.html">Alcohol</a>
+                            <a class="dropdown-item text-white" href="./404.html">Art</a>
+                            <a class="dropdown-item text-white" href="./404.html">Books</a>
+                            <a class="dropdown-item text-white" href="./404.html">Drink</a>
+                            <a class="dropdown-item text-white" href="./404.html">Electronics</a>
+                            <a class="dropdown-item text-white" href="./404.html">Flowers & Plants</a>
+                            <a class="dropdown-item text-white" href="./404.html">Food</a>
+                            <a class="dropdown-item text-white" href="./404.html">Gadgets</a>
+                            <a class="dropdown-item text-white" href="./404.html">Garden</a>
+                            <a class="dropdown-item text-white" href="./404.html">Grocery</a>
+                            <a class="dropdown-item text-white" href="./404.html">Home</a>
+                            <a class="dropdown-item text-white" href="./404.html">Jewelry</a>
+                            <a class="dropdown-item text-white" href="./404.html">Kids & Baby</a>
+                            <a class="dropdown-item text-white" href="./404.html">Men's Fashion</a>
+                            <a class="dropdown-item text-white" href="./404.html">Mobile</a>
+                            <a class="dropdown-item text-white" href="./404.html">Motorcycles</a>
+                            <a class="dropdown-item text-white" href="./404.html">Movies</a>
+                            <a class="dropdown-item text-white" href="./404.html">Music</a>
+                            <a class="dropdown-item text-white" href="./404.html">Office</a>
+                            <a class="dropdown-item text-white" href="./404.html">Pets</a>
+                            <a class="dropdown-item text-white" href="./404.html">Romantic</a>
+                            <a class="dropdown-item text-white" href="./404.html">Sport</a>
+                            <a class="dropdown-item text-white" href="./404.html">Toys</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <a class="dropdown-toggle text-white text-decoration-none" data-bs-toggle="collapse"
+                                href="#multiCollapseExample5" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample5"> <b>SALE</b>
+                            </a>
+                        </p>
+                        <div class="row collapse multi-collapse" id="multiCollapseExample5">
+                            <a class="dropdown-item text-white" href="./404.html">Accesories</a>
+                            <a class="dropdown-item text-white" href="./404.html">Alcohol</a>
+                            <a class="dropdown-item text-white" href="./404.html">Art</a>
+                            <a class="dropdown-item text-white" href="./404.html">Books</a>
+                            <a class="dropdown-item text-white" href="./404.html">Drink</a>
+                            <a class="dropdown-item text-white" href="./404.html">Electronics</a>
+                            <a class="dropdown-item text-white" href="./404.html">Flowers & Plants</a>
+                            <a class="dropdown-item text-white" href="./404.html">Food</a>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">COMPANY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">LIBRARY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">CONTACT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white nav-hover" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white" href="#">SP</a></li>
+                    <li><a class="dropdown-item text-white" href="#">TR</a></li>
+                    <li><a class="dropdown-item text-white" href="#">BR</a></li>
+                    <li><a class="dropdown-item text-white" href="#">RU</a></li>
+                    <li><a class="dropdown-item text-white" href="#">UK</a></li>
+                    <li><a class="dropdown-item text-white" href="#">RO</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white nav-hover" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    $ US
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white" href="#">€ EU</a></li>
+                    <li><a class="dropdown-item text-white" href="#">₺ TL</a></li>
+                    <li><a class="dropdown-item text-white" href="#">£ GPB</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="container px-4 pb-4 pt-2">
+                    <img src="./img/serviceDropdown/service.png" class="d-block w-100" height="340" alt="...">
+                </div>
+            </li>
+        </ul>
+    </div>
 
 
     <!--LOG IN DIALOG-->
@@ -343,8 +453,6 @@
         </div>
     </div>
 
-
-
     <!--POPULAR ITEMS -->
     <div class="container pt-5 web-items">
         <div class="container popular-items-container">
@@ -483,25 +591,169 @@
             </div>
         </div>
     </div>
+
+    <!--POPULAR ITEMS SECTION FOR MOBILE-->
+    <div class="container-fluid bg-dark mobile-items">
+        <div class="container popular-items-container-m">
+            <h3 class="pop_items-m text-white py-3 text-center">Popular Items</h3>
+            <div class="mobile-item-slider-m">
+                <div class="container item-hover-m item-container-m">
+                    <div class="card card-hover-m card-container-m">
+                        <img src="./img/popular-items/item-2.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <p class="card-text item-name-m">Kristina Dam Oak Table With White.</p>
+                            <p class="card-text item-price-m">$ 799.55</p>
+                        </div>
+                        <!--Item card hover-->
+                        <div class="item-cover-m py-5">
+                            <div class="my-5 py-5 hover-icons-m">
+                                <a class="mx-3 plus-icon-m"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon-m"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-container-m">
+                    <div class="card card-container-m">
+                        <img src="./img/popular-items/item-3.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <a class="text-decoration-none" href="./product_details.html">
+                                <p class="card-text text-dark item-name-m">Hay - About A Lounge Chair AAL 93.</p>                            
+                            </a>
+                            <a href="./product_details.html" class="btn my-3 item-buy-price-m"><span class="text-color">$659.55</span></a><button class="btn text-dark item-buy-m">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-hover-m item-container-m">
+                    <div class="card card-hover-m card-container-m">
+                        <img src="./img/popular-items/item-7.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <p class="card-text item-name-m">Activate Facial Mask and Charcoal Soap.</p>
+                            <p class="card-text item-price-m">$ 129.55</p>
+                        </div>
+                        <!--Item card hover-->
+                        <div class="item-cover-m py-5">
+                            <div class="my-5 py-5 hover-icons-m">
+                                <a class="mx-3 plus-icon-m"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon-m"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-hover-m item-container-m">
+                    <div class="card card-hover-m card-container-m">
+                        <img src="./img/popular-items/item-4.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <p class="card-text item-name-m">Cocktail Table Walnut | YES.</p>
+                            <p class="card-text item-price-m">$ 299.99</p>
+                        </div>
+                        <!--Item card hover-->
+                        <div class="item-cover-m py-5">
+                            <div class="my-5 py-5 hover-icons-m">
+                                <a class="mx-3 plus-icon-m"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon-m"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-hover-m item-container-m">
+                    <div class="card card-hover-m card-container-m">
+                        <img src="./img/popular-items/item-1.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <p class="card-text item-name-m">Hay - About A Lounge Chair AAL 93.</p>
+                            <p class="card-text item-price-m">$ 659.55</p>
+                        </div>
+                        <!--Item card hover-->
+                        <div class="item-cover-m py-5">
+                            <div class="my-5 py-5 hover-icons-m">
+                                <a class="mx-3 plus-icon-m"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon-m"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-hover-m item-container-m">
+                    <div class="card card-hover-m card-container-m">
+                        <img src="./img/popular-items/item-5.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <p class="card-text item-name-m">TORY DESK CALENDAR.</p>
+                            <p class="card-text item-price-m">$ 410.99</p>
+                        </div>
+                        <!--Item card hover-->
+                        <div class="item-cover-m py-5">
+                            <div class="my-5 py-5 hover-icons-m">
+                                <a class="mx-3 plus-icon-m"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon-m"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-hover-m item-container-m">
+                    <div class="card card-hover-m card-container-m">
+                        <img src="./img/popular-items/item-6.png" class="card-img-top bg-dark item-img-m" alt="...">
+                        <div class="card-body text-center item-card-bottom-m">
+                            <p class="card-text item-name-m">CH445 Wing Chair on Suıte NY.</p>
+                            <p class="card-text item-price-m">$ 330.55</p>
+                        </div>
+                        <!--Item card hover-->
+                        <div class="item-cover-m py-5">
+                            <div class="my-5 py-5 hover-icons-m">
+                                <a class="mx-3 plus-icon-m"><i class="fas fa-plus-circle fa-5x"></i></a>
+                                <a class="mx-3 heart-icon-m"><i class="fab fa-gratipay fa-5x text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container item-container-m">
+                    <div class="text-white static-card-container-m">
+                        <div class="static-img-m" style="background-image: url(./img/popular-items/item-pink.png)">
+                        </div>
+                        <div class="static-card-overlay-m">
+                            <p>My dragons are <br>
+                                 misbehaving again.<br>
+                                 Unbelieveable!</p>
+                            <p><img class="static-icon-m" src="./img/popular-items/pink-icon.png" alt=""> 3H AGO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--FEATURED PRODUCTS-->
     <div class="container bg-dark py-5">
         <div class="container">
             <h1 class="text-white py-2 text-center">Featured Products</h1>
             <p class="text-center text-light">Unde omnis iste natus error sit voluptatem.</p>
+
+            <!--FEATURED PRODUCTS ARROW FOR WEB-->
             <div class="row justify-content-center web-arrow">
                 <div class="prev_arrow col-1 text-center" style="cursor: pointer;">
                     <span class="col-1 text-center"><i class="fas fa-chevron-left text-white mt-2 ms-5"></i></span>
                 </div>
-                <h3 class="featured-line col-6 text-white text-center" >///</h3>
+                <h3 class="featured-line col-6 text-white text-center">///</h3>
                 <div class="next_arrow col-1 text-center" style="cursor: pointer;">
                     <span class="col-1 text-center"><i class="fas fa-chevron-right text-white mt-2 me-5"></i></span>
                 </div>
             </div>
-            <div class="row my-5 px-5 featured-item">
+
+            <!--FEATURED PRODUCTS ARROW FOR MOBILE-->
+            <div class="row justify-content-center mobile-arrow">
+                <div class="prev_arrow-m col-1 text-center" style="cursor: pointer;">
+                    <span class="col-1 text-center"><i class="fas fa-chevron-left text-white mt-2"></i></span>
+                </div>
+                <h3 class="featured-line col-6 text-white text-center">///</h3>
+                <div class="next_arrow-m col-1 text-center" style="cursor: pointer;">
+                    <span class="col-1 text-center"><i class="fas fa-chevron-right text-white mt-2 me-5"></i></span>
+                </div>
+            </div>
+
+            <!--FEATURED PRODUCTS FOR WEB-->
+            <div class="row my-5 px-5 featured-item" id="featured-item">
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="featured1">
+                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Awesome</p>
@@ -512,7 +764,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="featured2">
+                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Marketing</p>
@@ -523,7 +775,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="featured3">
+                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Awesome</p>
@@ -534,7 +786,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="featured4">
+                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Marketing</p>
@@ -545,7 +797,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="featured1">
+                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Awesome</p>
@@ -556,7 +808,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="featured2">
+                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Marketing</p>
@@ -567,7 +819,7 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="featured3">
+                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Awesome</p>
@@ -578,7 +830,99 @@
                 <div class="col-12 col-lg-3">
                     <div class="card mx-2">
                         <a class="text-decoration-none" href="./product_detail.html">
-                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="featured4">
+                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--FEATURED PRODUCTS FOR MOBILE-->
+            <div class="row my-5 px-5 featured-item-mobile" id="featured-item-mobile">
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured1.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured2.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured3.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
+                                <p class="card-text featured-products academy-text fw-bold">Awesome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card mx-2">
+                        <a class="text-decoration-none" href="./product_detail.html">
+                            <img src="./img/featured-products/featured4.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <p class="card-text text-dark">Kristina Dam Oak Table With White Marble</p>
                                 <p class="card-text featured-products academy-text fw-bold">Marketing</p>
@@ -589,9 +933,10 @@
             </div>
         </div>
     </div>
+    
     <!--FOOTER -->
 
-    <footer class="footer mt-auto py-3 bg-white">
+    <footer class="footer mt-auto py-3 bg-white web-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
@@ -677,6 +1022,131 @@
         </div>
     </footer>
 
+    <!--MOBILE FOOTER-->
+    <footer class="footer mt-auto py-3 my-5 mx-4 bg-white mobile-footer">
+        <div class="row mb-3">
+            <h6 class="text-secondary">© Copyright <span id="current-year-m"></span>.
+                <br>
+                All Rights Reserved.
+            </h6>
+
+        </div>
+        <div class="row">
+            <p>
+                <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="collapse"
+                    href="#multiCollapseExample1" role="button" aria-expanded="false"
+                    aria-controls="multiCollapseExample1"> <b>CONTACT</b> </a>
+            </p>
+            <div class="row collapse multi-collapse" id="multiCollapseExample1">
+                <p class="text-secondary">Headquarters: <br>
+                    5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6</p> <br>
+                <a href="mailto:contact@osf-global.com"
+                    class="text-secondary text-decoration-none">contact@osf-global.com</a> <br>
+                <a href="tel:+18885484344" class="text-secondary text-decoration-none mb-2">+1 (888) 548-4344</a>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="collapse"
+                    href="#multiCollapseExample2" role="button" aria-expanded="false"
+                    aria-controls="multiCollapseExample2"> <b>CATEGORIES</b> </a>
+            </p>
+            <div class="row collapse multi-collapse" id="multiCollapseExample2">
+                <a class="text-secondary text-decoration-none" href="./404.html">Alcohol</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Art</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Books</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Drink</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Home</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Jewelry</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Kids & Baby</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Men's Fashion</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Mobile</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Motorcycles</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Movies</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Music</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Sport</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Toys</a>
+                <br>
+                <a class="text-secondary text-decoration-none" href="./404.html">Travel</a>
+                <br>
+                <a class="text-secondary text-decoration-none mb-2" href="./404.html">Women's Fashion</a>
+            </div>
+            <div class="row">
+                <p>
+                    <a class="dropdown-toggle text-dark text-decoration-none" data-bs-toggle="collapse"
+                        href="#multiCollapseExample3" role="button" aria-expanded="false"
+                        aria-controls="multiCollapseExample3"> <b>ABOUT</b> </a>
+                </p>
+                <div class="row collapse multi-collapse" id="multiCollapseExample3">
+                    <a class="text-secondary text-decoration-none" href="./404.html">About Us</a>
+                    <br>
+                    <a class="text-secondary text-decoration-none" href="./404.html">Delivery</a>
+                    <br>
+                    <a class="text-secondary text-decoration-none" href="./404.html">Testimonials</a>
+                    <br>
+                    <a class="text-secondary text-decoration-none" href="./404.html">Contact</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <a href="https://www.facebook.com/OSFDigital"><i class="fab fa-facebook-f text-dark"></i></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.google.com/"><i class="fab fa-google-plus-g text-dark"></i></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://twitter.com/osfdigital"><i class="fab fa-twitter text-dark"></i></a>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.pinterest.ca/osfglobal"><i class="fab fa-pinterest-p text-dark"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--MENU ICONS FOR MOBILE-->
+    <div class="container-fluid bg-dark mobile-buttons fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-link-secondary">
+                        <i class="fa-solid text-white fa-magnifying-glass fa-lg"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-link-secondary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@fat">
+                        <i class="nav-icons text-white fa fa-user fa-lg"></i>
+                    </button>
+                </div>
+                <div class="col notification-mobile">
+                    <button class="btn btn-link-secondary">
+                        <i class="nav-icons text-white fa-regular fa-heart fa-lg"></i>
+                        <span class="badge wish-badge">0</span>
+                    </button>
+                </div>
+                <div class="col notification-mobile">
+                    <button class="btn btn-link-secondary" onclick="location.href='./shopping_cart.html'" type="button">
+                        <i class="nav-icons text-white fa-solid fa-cart-shopping fa-lg"></i>
+                        <span class="badge cart-badge">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
