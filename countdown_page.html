@@ -336,39 +336,57 @@
     </div>
 
     <main>
-        <!--404 PAGE AREA-->
-        <div class="container general-light-bg my-0 py-3">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a class="academy-text" href="./index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">404</li>
-                </ol>
-            </nav>
-            <h1 class="line-area text-dark py-3 text-center line-area-font">404</h1>
-            <div class="container">
-                <div class="container bg-white rounded my-3 py-5 text-center">
-                    <section class="container">
-                        <div class="warning ">
-                            <div class="showcase"> Oops!</div>
-                            <div class="p-section">
-                                <h4 class="notfound-font">Sorry, this page could not be found!</h4>
-                                <br>
-                                <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                                <br>
-                                <a class="academy-text" href="index.html">Go back to Homapage</a>
-                                <br>
-                                <br>
-                                <h4 class="notfound-font">Search our site</h4>
-                                <div class="search-box">
-                                    <input type="text" placeholder="SEARCH">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+        <!--COUNTDOWN SECTION-->
+    <div class="container-fluid">
+        <p class="display-5 text-center relase-text-main">We Will Release OSF Academy</p>
+        <br>
+        <p class="text-center relase-text">We are workinng hard and estimated time products below.</p>
+        <p class="text-center relase-text">Sed ac tristique nunc, ut gravida nunc. Nulla consequat erat non lectus imperdiet.</p>
+        <br>
+
+        <div class="container count " style="margin-right: 130px;">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="count-number-day col-3 px-3">
+                    <span class="display-1" id="day">00</span>
+                </div>
+                <div class="count-number-hours col-3 px-3">
+                    <span class="display-1" id="hour">00</span>
+                </div>
+                <div class="count-number-minutes col-3 px-3">
+                    <span class="display-1" id="minute">00</span>
+                </div>
+                <div class="count-number-seconds col-3 px-3">
+                    <span class="display-1" id="second">00</span>
                 </div>
             </div>
+            <div>
+                <div class="row px-2">
+                    <div class="countd col-3">
+                        <h1 class="ms-3">Days</h1>
+                    </div>
+                    <div class="countd col-3">
+                        <h1 class="ms-3">Hours</h1>
+                    </div>
+                    <div class="countd col-3">
+                        <h1 class="me-5">Minutes</h1>
+                    </div>
+                    <div class="countd col-3">
+                        <h1 class="me-5">Seconds</h1>
+                    </div>
+                </div>
+            </div>
+           
         </div>
+
+        <form class="container col-12 col-lg-5 px-5 pb-5 mt-5">
+            <ul id="email-send"></ul>
+            <div class="input-group mb-3 px-5">
+                <input type="text" class="form-control form-feature" id="exampleInputEmail1" aria-describedby="emailHelp" method="post">
+                <button type="submit" class="btn login-btn form-submit" id="submit" value="submit">SEND</button>
+            </div>
+        </form>
+
+    </div>
     </main>
 
      <!--FOOTER -->
@@ -581,10 +599,12 @@
                     </button>
                 </div>
                 <div class="col notification-mobile">
+                    <form id="form" action="" method="post"></form>
                     <button class="btn btn-link-secondary" onclick="location.href='./shopping_cart.html'" type="button">
                         <i class="nav-icons text-white fa-solid fa-cart-shopping fa-lg"></i>
                         <span class="badge cart-badge">0</span>
                     </button>
+                </form>
                 </div>
             </div>
         </div>
@@ -594,6 +614,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/countdown_page.js"></script>
 </body>
 
 </html>

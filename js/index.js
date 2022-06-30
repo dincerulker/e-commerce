@@ -3,6 +3,10 @@
 
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
+/* Current Year for mobile
+*******************************************************/
+document.getElementById("current-year-m").innerHTML = new Date().getFullYear();
+
 /* Slick Carousel  
 *******************************************************/
 $(document).ready(function () {

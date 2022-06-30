@@ -423,7 +423,7 @@ a {
 }
 
 .accept-cookies {
-  
+
   width: 148px;
   height: 37px;
   border-radius: 30px;
@@ -446,7 +446,7 @@ a {
 
 @media screen and (min-width: 992px) {
 
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
 
@@ -454,7 +454,7 @@ a {
     display: none;
   }
 
-  .mobile-items{
+  .mobile-items {
     display: none;
   }
 
@@ -462,15 +462,15 @@ a {
     display: none;
   }
 
-  .mobile-buttons{
+  .mobile-buttons {
     display: none;
   }
 
-  .mobile-arrow{
+  .mobile-arrow {
     display: none;
   }
 
-  .mobile-footer{
+  .mobile-footer {
     display: none;
   }
 
@@ -499,7 +499,7 @@ a {
   #featured-item {
     display: none;
   }
-  
+
   .comp-name {
     display: none;
   }
@@ -572,4 +572,70 @@ a {
   opacity: 1;
 }
 
+
+/* Countdown Page
+*******************************************************/
+
+.relase-text-main {
+  font-size: 30px;
+  color: #45413e;
+  font-family: "Lato - Extra Bold";
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+
+.relase-text {
+  color: #45413e;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+}
+
+.count-number-day {
+  background-color:#fff;
+    border:2px solid #84bc22;    
+    height:100px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:100px;
+    margin: 0px 220px 0px 0px;
+}
+
+.count-number-hours {
+  background-color:#fff;
+    border:2px solid #84bc22;    
+    height:100px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:100px;
+    margin: 0px 210px 0px 0px;
+}
+
+.count-number-minutes {
+  background-color:#fff;
+    border:2px solid #84bc22;    
+    height:100px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:100px;
+    margin: 0px 210px 0px 0px;
+}
+
+.count-number-seconds {
+  background-color:#fff;
+    border:2px solid #84bc22;    
+    height:100px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:100px;
+    margin: 0px 210px 0px 0px;
+}
 

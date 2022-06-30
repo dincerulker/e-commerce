@@ -1,7 +1,10 @@
 /* Current Year 
 *******************************************************/
-
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
+/* Current Year for mobile
+*******************************************************/
+document.getElementById("current-year-m").innerHTML = new Date().getFullYear();
 
 
 /* Populer Items 
