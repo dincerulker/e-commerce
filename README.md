@@ -1,4 +1,4 @@
-# osf-academy
+# e-commerce
 
 ## All necessary installations should be done as follows.
 
