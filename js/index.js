@@ -49,7 +49,7 @@ $(document).ready(function () {
         .after('<div class="row my-5 products-four">');
 
       for (let i = itemsNumber; i < itemsNumber + 4; i++) {
-
+          
         if (i < product_list.length) {
           $(".products-four:last")
             .append('<div class="col-md-3 item-hover item-container">');
